@@ -1,0 +1,133 @@
+:root {
+  --Hawaii-image: url(../assets/Images/hawaii.jpg) no-repeat center;
+  --Iceland-image: url(../assets/Images/iceland.jpg) no-repeat center;
+  --greece-image: url(../assets/Images/greece.jpg) no-repeat center;
+}
+/* Logo and Navigation bar */
+#logo {
+  width: 70%;
+}
+.nav-bar-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.nav-bar {
+  width: 30%;
+}
+.nav-bar__list {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* Destination Section */
+
+.destination-section--hawaii {
+  background: var(--Hawaii-image);
+  background-size: cover;
+  background-position: center;
+}
+.destination-section--iceland {
+  background: var(--Iceland-image);
+  background-size: cover;
+  background-position: center;
+}
+.destination-section--greece {
+  background: var(--greece-image);
+  background-size: cover;
+  background-position: center;
+}
+.destination-section {
+  height: 70vh;
+  min-height: 520px;
+  padding: 2em 5em;
+}
+.destination__title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-top: 0;
+}
+.destination__information {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  border-radius: 5px;
+}
+.destination__itinerary {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  height: 45vh;
+  min-height: 300px;
+  width: 20%;
+  text-align: center;
+  padding: 1rem;
+}
+.destination__itinerary__title {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 2px solid black;
+}
+.destination__itinerary__list {
+  margin-top: 13%;
+  padding-left: 0;
+  display: grid;
+  row-gap: 10%;
+}
+.destination__itinerary__list > li {
+  background-color: #fefaf5;
+  padding: 5%;
+  font-size: 0.9em;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #fefaf5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 10rem;
+}
+.footer__item {
+  flex-grow: 1;
+}
+.footer__hours,
+.footer__social {
+  display: flex;
+  column-gap: 10%;
+}
+.footer__title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.footer__subtitle {
+  font-size: 0.5rem;
+  color: #db7a4e;
+  margin: 0;
+}
+.footer__info {
+  font-size: 0.75rem;
+}
+.footer__icon__link {
+  width: 15px;
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.footer__item--social {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  row-gap: 15%;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="nav-bar-header">
+      <a id="logo" href="#home">
+        <span>Travel site</span>
+      </a>
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li>
+            <a id="#home" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./pages/hawaii.html">Hawaii</a>
+          </li>
+          <li>
+            <a href="./pages/iceland.html">Iceland</a>
+          </li>
+          <li>
+            <a href="./pages/greece.html">Greece</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-panel">
+        <div class="hero-panel__section">
+          <h1 class="hero-panel__header">
+            Travelling Comes With Endless Discoveries
+          </h1>
+          <!-- <div class="hero-panel__description"> -->
+          <p class="hero-panel__subheader">
+            Don't let your dreams be just dreams. Experience the world by
+            booking a vacation with us now.
+          </p>
+          <a class="hero-panel__link" href="#destination-section"
+            ><button class="hero-panel__btn">Get Started</button></a
+          >
+          <!-- </div> -->
+        </div>
+
+        <img
+          class="hero-panel__image"
+          src="./assets/Images/hero.png"
+          alt="Travel site Hero Image"
+        />
+      </section>
+      <section id="destination-section" class="destination-section">
+        <h2 class="destination__title">Recommendations</h2>
+        <ul class="destination__cards">
+          <li class="destination__cards__item">
+            <a
+              class="destination__link destination__link--hawaii"
+              href="./pages/hawaii.html"
+            >
+              <h3 class="destination__name">Hawaii</h3></a
+            >
+          </li>
+
+          <li class="destination__cards__item">
+            <a
+              class="destination__link destination__link--iceland"
+              href="./pages/iceland.html"
+            >
+              <h3 class="destination__name">Iceland</h3></a
+            >
+          </li>
+          <li class="destination__cards__item">
+            <a
+              class="destination__link destination__link--greece"
+              href="./pages/greece.html"
+            >
+              <h3 class="destination__name">Greece</h3></a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__item">
+        <h3 class="footer__title">Contact</h3>
+        <div>
+          <p class="footer__subtitle">EMAIL</p>
+          <p class="footer__info">info@travelsite.com</p>
+        </div>
+      </div>
+      <div class="footer__item">
+        <h3 class="footer__title">Hours</h3>
+        <div class="footer__hours">
+          <div>
+            <p class="footer__subtitle">MONDAY-FRIDAY</p>
+            <p class="footer__info">9:00 AM - 5:00 PM</p>
+          </div>
+          <div>
+            <p class="footer__subtitle">SATURDAY</p>
+            <p class="footer__info">10:00 AM - 4:00 PM</p>
+          </div>
+          <div>
+            <p class="footer__subtitle">SUNDAY</p>
+            <p class="footer__info">Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__item footer__item--social">
+        <h3 class="footer__title">Social <br /></h3>
+
+        <div class="footer__social">
+          <a class="footer__icon__link" href="https://www.instagram.com/"
+            ><img
+              class="footer__icon"
+              src="./assets/Icons/icon-instagram.png"
+              alt="Instragram Icon"
+          /></a>
+          <a class="footer__icon__link" href="https://www.facebook.com/"
+            ><img
+              class="footer__icon"
+              src="./assets/Icons/icon-facebook.png"
+              alt="facebook Icon"
+          /></a>
+          <a class="footer__icon__link" href="https://www.yelp.ca/toronto"
+            ><img
+              class="footer__icon"
+              src="./assets/Icons/icon-twitter.png"
+              alt="twitter Icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

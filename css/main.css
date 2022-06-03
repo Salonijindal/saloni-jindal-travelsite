@@ -1,0 +1,162 @@
+:root {
+  --Hawaii-image: url(../assets/Images/hawaii.jpg) no-repeat center;
+  --Iceland-image: url(../assets/Images/iceland.jpg) no-repeat center;
+  --greece-image: url(../assets/Images/greece.jpg) no-repeat center;
+}
+
+/* Logo and Navigation bar */
+#logo {
+  width: 70%;
+}
+.nav-bar-header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.nav-bar {
+  width: 30%;
+}
+.nav-bar__list {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* Hero Section */
+.hero-panel {
+  background-color: #fefaf5;
+  height: 50vh;
+  min-height: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 5em;
+  column-gap: 10%;
+}
+.hero-panel__section {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 3%;
+}
+.hero-panel__header {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.hero-panel__subheader {
+  font-size: 1rem;
+}
+.hero-panel__image {
+  width: 400px;
+}
+.hero-panel__btn {
+  background-color: #db7a4e;
+  color: #fefaf5;
+  border: none;
+  width: 180px;
+  height: 35px;
+  border-radius: 20px;
+}
+/* Recommendation Sections */
+.destination-section {
+  height: 50vh;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 5em;
+}
+.destination__title {
+  font-size: 1rem;
+}
+.destination__cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  border-radius: 5px;
+}
+.destination__cards__item {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.destination__link {
+  width: 250px;
+  height: 350px;
+  min-height: 200px;
+  display: block;
+  border-radius: 5px;
+  position: relative;
+}
+.destination__name {
+  position: absolute;
+  margin: 1em;
+  bottom: 0;
+  right: 0;
+  color: #fefaf5;
+}
+.destination__link--hawaii {
+  background: var(--Hawaii-image);
+  background-size: cover;
+  background-position: center;
+}
+.destination__link--iceland {
+  background: var(--Iceland-image);
+  background-size: cover;
+  background-position: center;
+}
+.destination__link--greece {
+  background: var(--greece-image);
+  background-size: cover;
+  background-position: center;
+}
+/* Footer Section */
+.footer {
+  background-color: #fefaf5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 10rem;
+}
+.footer__item {
+  flex-grow: 1;
+}
+.footer__hours,
+.footer__social {
+  display: flex;
+  column-gap: 10%;
+}
+.footer__title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.footer__subtitle {
+  font-size: 0.5rem;
+  color: #db7a4e;
+  margin: 0;
+}
+.footer__info {
+  font-size: 0.75rem;
+}
+.footer__icon__link {
+  width: 15px;
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.footer__item--social {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  row-gap: 15%;
+}

@@ -3,7 +3,6 @@
   --Iceland-image: url(../assets/Images/iceland.jpg) no-repeat center;
   --greece-image: url(../assets/Images/greece.jpg) no-repeat center;
 }
-
 /* Logo and Navigation bar */
 #logo {
   width: 70%;
@@ -19,6 +18,7 @@
 }
 .nav-bar {
   width: 30%;
+  height: 60px;
 }
 .nav-bar__list {
   display: flex;
@@ -26,19 +26,25 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
 }
 .nav-bar__item {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0.5rem;
+  transition: ease-in-out;
+}
+.nav-bar__item:hover {
+  transform: scale(1.2);
 }
 .nav-bar__item.nav-bar--current {
   border-bottom: 3px solid #db7a4e;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 20%);
+  border-radius: 5px 5px 0 0;
 }
 /* Hero Section */
 .hero-panel {
   background-color: #fefaf5;
   height: 50vh;
-  min-height: 345px;
+  min-height: 470px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +64,6 @@
   font-size: 2.25rem;
   margin: 0;
 }
-
 .hero-panel__subheader {
   font-size: 1rem;
 }
@@ -72,6 +77,13 @@
   width: 180px;
   height: 35px;
   border-radius: 20px;
+  cursor: pointer;
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.btn--animation:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
 /* Recommendation Sections */
 .destination-section {
@@ -94,6 +106,12 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: ease;
+  transition-duration: 0.5s;
+}
+.destination__cards__item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
 .destination__link {
   width: 250px;

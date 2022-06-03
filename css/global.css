@@ -17,3 +17,9 @@ ul {
 h3 {
   margin: 0;
 }
+a:active {
+  color: #131313;
+}
+a:visited {
+  color: #335576;
+}

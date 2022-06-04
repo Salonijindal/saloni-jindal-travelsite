@@ -1,33 +1,32 @@
-:root {
-  --Hawaii-image: url(../assets/Images/hawaii.jpg) no-repeat center;
-  --Iceland-image: url(../assets/Images/iceland.jpg) no-repeat center;
-  --greece-image: url(../assets/Images/greece.jpg) no-repeat center;
-}
-/* Logo and Navigation bar */
+/* ----Logo and Navigation bar---- */
+/* Logo */
 #logo {
   width: 70%;
 }
+/* Nav-bar  */
+.nav-bar {
+  width: 30%;
+}
 .nav-bar-header {
-  background-color: #ffffff;
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
   width: 100%;
   font-size: 1rem;
-}
-.nav-bar {
-  width: 30%;
-  height: 60px;
+  position: fixed; /* Fixing the nav bar on the top on each page */
+  z-index: 1;
+  top: 0;
 }
 .nav-bar__list {
-  display: flex;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0.8rem 0;
 }
+/* animations added to nav bar items */
 .nav-bar__item {
   padding: 0.5rem 0.5rem;
   transition: ease-in-out;
@@ -36,13 +35,15 @@
   transform: scale(1.2);
 }
 .nav-bar__item.nav-bar--current {
-  border-bottom: 3px solid #db7a4e;
-  box-shadow: 0px 4px 10px rgb(0 0 0 / 20%);
-  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid var(--orange);
 }
-/* Hero Section */
+/* ----Main---- */
+.main-content {
+  margin-top: 64px;
+}
+/* ----Hero Section---- */
 .hero-panel {
-  background-color: #fefaf5;
+  background-color: var(--light-beige);
   height: 50vh;
   min-height: 470px;
   display: flex;
@@ -70,9 +71,10 @@
 .hero-panel__image {
   width: 400px;
 }
+/* animations added to nav bar items */
 .hero-panel__btn {
-  background-color: #db7a4e;
-  color: #fefaf5;
+  background-color: var(--orange);
+  color: var(--light-beige);
   border: none;
   width: 180px;
   height: 35px;
@@ -85,7 +87,7 @@
   transform: scale(1.2);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
-/* Recommendation Sections */
+/* ----Recommendation Sections---- */
 .destination-section {
   height: 50vh;
   min-height: 520px;
@@ -102,6 +104,7 @@
   column-gap: 5%;
   border-radius: 5px;
 }
+/* animations added to nav bar items */
 .destination__cards__item {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -126,8 +129,9 @@
   margin: 1em;
   bottom: 0;
   right: 0;
-  color: #fefaf5;
+  color: var(--light-beige);
 }
+/* Images for cards */
 .destination__link--hawaii {
   background: var(--Hawaii-image);
   background-size: cover;
@@ -143,9 +147,9 @@
   background-size: cover;
   background-position: center;
 }
-/* Footer Section */
+/* ----Footer Section---- */
 .footer {
-  background-color: #fefaf5;
+  background-color: var(--light-beige);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -166,7 +170,7 @@
 
 .footer__subtitle {
   font-size: 0.5rem;
-  color: #db7a4e;
+  color: var(--orange);
   margin: 0;
 }
 .footer__info {

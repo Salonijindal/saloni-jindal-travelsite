@@ -3,6 +3,17 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  /* Defining variable for the images */
+  --Hawaii-image: url(../assets/Images/hawaii.jpg) no-repeat center;
+  --Iceland-image: url(../assets/Images/iceland.jpg) no-repeat center;
+  --greece-image: url(../assets/Images/greece.jpg) no-repeat center;
+  /* Defining variables for colors of the theme */
+  --white: #ffffff;
+  --orange: #db7a4e;
+  --light-beige: #fefaf5;
+  --black: black;
+}
 body {
   margin: 0;
   font-family: Verdana;
